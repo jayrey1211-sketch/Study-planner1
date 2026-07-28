@@ -45,7 +45,7 @@ ${customRequest ? `- 수정/추가 요청사항: ${customRequest}` : ''}
 }
 `;
 
-    // Gemini API 호출 (gemini-2.5-flash 모델 사용)
+    // Gemini API 호출 (gemini-3.1-flash-lite 모델 사용)
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
